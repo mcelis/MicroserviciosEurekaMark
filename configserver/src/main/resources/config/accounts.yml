@@ -1,0 +1,10 @@
+build:
+  version: "v3.0 Default"
+
+contact:
+  message: "Bank System - Account API"
+  details:
+    name: "Marco Celis"
+    email: "mcelis@hotmail.com"
+  phone-numbers:
+    -(57) 315600400

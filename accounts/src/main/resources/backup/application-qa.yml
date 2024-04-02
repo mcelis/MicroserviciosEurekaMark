@@ -1,0 +1,21 @@
+Spring:
+  config:
+    activate:
+      on-profile: "qa"
+
+# Property to be read from code
+build:
+  version: "v2.0"
+
+#@ConfigurationProperties
+contact:
+  message: "Bank System - Account API"
+  details:
+    name: "Pedro Perez."
+    email: "pedroperezr@gmail.com"
+  phone-numbers:
+    -(57) 315600800
+
+
+
+  swagger-ui:

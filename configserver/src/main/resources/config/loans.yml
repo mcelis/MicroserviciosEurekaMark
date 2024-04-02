@@ -1,0 +1,10 @@
+build:
+  version: "v3.0 Loans-Default"
+
+contact:
+  message: "Bank System - Loans API"
+  details:
+    name: "Marco Celis - LOANS"
+    email: "mcelis@hotmail.com"
+  phone-numbers:
+    -(57) 315600400 LOANS

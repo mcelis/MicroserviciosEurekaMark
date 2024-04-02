@@ -1,0 +1,10 @@
+build:
+  version: "v2.0 Loans-QA"
+
+contact:
+  message: "Bank System - Loans API"
+  details:
+    name: "Juan Loans."
+    email: "juan@gmail.com"
+  phone-numbers:
+    -(57) 315600800

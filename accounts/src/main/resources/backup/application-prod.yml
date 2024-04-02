@@ -1,0 +1,21 @@
+Spring:
+  config:
+    activate:
+      on-profile: "prod"
+
+# Property to be read from code
+build:
+  version: "v1.0"
+
+#@ConfigurationProperties
+contact:
+  message: "Bank System - Account API"
+  details:
+    name: "Mario Moreno."
+    email: "MarioMoreno@hotmail.com"
+  phone-numbers:
+    -(57) 315600900
+
+
+  swagger-ui:
+    enabled: true

@@ -1,0 +1,10 @@
+build:
+  version: "v2.0 QA"
+
+contact:
+  message: "Bank System - Account API"
+  details:
+    name: "Juan"
+    email: "Juan@gmail.com"
+  phone-numbers:
+    -(57) 315600800
