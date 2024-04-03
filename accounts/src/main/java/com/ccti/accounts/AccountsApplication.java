@@ -17,9 +17,9 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 				description = "Proyecto Ejemplo para curso SpringBoot",
 				version = "v1",
 				contact = @Contact(
-						name = "AlexG",
-						email = "Alexg@globalhitss.com",
-						url = "https://www.globalhitss.com"
+						name = "Marco Celis",
+						email = "mcelis@globalhitss.com",
+						url = "https://www.abc.com"
 				),
 				license = @License(
 						name = "Apache 2.0",
