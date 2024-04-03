@@ -1,29 +1,29 @@
 server:
   port: 8080
 spring:
+#  datasource:
+#    url: jdbc:mysql://localhost:3306/accountsdb
+#    driverClassName: com.mysql.cj.jdbc.Driver
+#    username: root
+#    password: '1234'
+#  jpa:
+#    database-platform: org.hibernate.dialect.MySQLDialect
+#    hibernate:
+#      ddl-auto: update
+#    show-sql: true
   datasource:
-    url: jdbc:mysql://localhost:3306/accountsdb
-    driverClassName: com.mysql.cj.jdbc.Driver
-    username: root
-    password: '1234'
+    url: jdbc:h2:mem:testdb
+    driverClassName: org.h2.Driver
+    username: sa
+    password: ''
+  h2:
+    console:
+      enabled: true
   jpa:
-    database-platform: org.hibernate.dialect.MySQLDialect
+    database-platform: org.hibernate.dialect.H2Dialect
     hibernate:
       ddl-auto: update
     show-sql: true
-  #datasource:
-   # url: jdbc:h2:mem:testdb
-    #driverClassName: org.h2.Driver
-    #username: sa
-    #password: ''
-  #h2:
-   # console:
-    #  enabled: true
-  #jpa:
-    #database-platform: org.hibernate.dialect.H2Dialect
-    #hibernate:
-     # ddl-auto: update
-    #show-sql: true
   # Propiedades para SpringCloud Config
   application:
     name: "accounts"
@@ -38,9 +38,35 @@ spring:
     username: "guest"
     password: "guest"
 
+# For eureka:
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    fetchRegistry: true
+    registerWithEureka: true
+    serviceUrl:
+      defaultZone: http://localhost:8070/eureka/
+
+info:
+  app:
+    name: "accounts"
+    description: "Accounts Project for Training"
+    version: "1.0"
+
+endpoints:
+  shutdown:
+    enabled: true
+
 # Activate actuator endpoints
 management:
   endpoints:
     web:
       exposure:
         include: "*"
+  info:
+    env:
+      enabled: true
+  endpoint:
+    shutdown:
+      enabled: true

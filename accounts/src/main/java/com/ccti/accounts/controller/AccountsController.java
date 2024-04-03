@@ -33,7 +33,7 @@ import java.time.LocalDateTime;
         name = "Controlador para servicio de cuantas",
         description = "Endpoints para las operaciones CRUD del servicio"
 )
-@RequestMapping(path = "/api/v1", produces = {MediaType.APPLICATION_JSON_VALUE})
+@RequestMapping(path = "/api", produces = {MediaType.APPLICATION_JSON_VALUE})
 public class AccountsController {
 
     @NonNull
